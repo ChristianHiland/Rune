@@ -13,12 +13,12 @@ import android.widget.TextView
 class MainActivity : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+           ApplicationProvider.getApplicationContext()).apply {
+          setGraph(R.navigation.navigation)
+          setCurrentDestination(R.id.)
     }
 
     fun sendMessage(view: View) {
 
-       view.findNavController().navigate(R.id.)
     }
 }
