@@ -21,12 +21,16 @@
       android:name="com.christian.rune.homeFragment"
       android:label="fragment_home"
       tools:layout="@layout/fragmentHome"
-    <navigation android:id="@+id/homeFragment" app:startDestination="@id/website"
-      <fragment
-        android:id="@+id/website"
-        android:name="com.christian.rune.chooseRecipient"
-        android:label="fragment_web"
-        tools:layout="@layout/fragment_web">
+     <fragment
+        android:id="@+id/about"
+        android:name="com.christian.rune.aboutpage"
+        android:label="aboutFragment"
+        tools:layout="@layout/aboutFragment">
+         <action
+            // The name
+            android:id="@+id/action_homeFragment_to_aboutFragment"
+            // The destination of the screen
+            app:destination="@id/aboutPage" />
       </fragment>
     </navigation>
 </navigation>
