@@ -11,7 +11,35 @@
      tools:layout_editor_absoluteY="81dp">
 //The elements go here.
 
-<textView
-  android:id="@+id/home_title"
-  android:gravity="center_horizontal"
-  android:text="@string/Hello and welcome to diagnostics">
+<TextView
+        android:id="@+id/hello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello User."
+        android:textColor="#FA0000"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.042"
+        tools:ignore="HardcodedText" />
+  
+<Button
+        android:id="@+id/startbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="548dp"
+        android:layout_marginEnd="99dp"
+        android:layout_marginBottom="61dp"
+        android:clipToOutline="true"
+        android:onClick="sendMessage"
+        android:text="Click me to continue"
+        android:theme="@android:style/Theme.Holo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hello"
+        tools:ignore="HardcodedText,MissingConstraints,UnusedAttribute" />
