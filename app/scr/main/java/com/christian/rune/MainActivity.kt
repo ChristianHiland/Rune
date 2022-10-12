@@ -15,9 +15,12 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
            ApplicationProvider.getApplicationContext()).apply {
           setGraph(R.navigation.navigation)
-          setCurrentDestination(R.id.)
+          setCurrentDestination(R.id.mainFragment)
     }
-
+    
+     // Create a graphical FragmentScenario for the Leaderboard fragment
+        val homePage = launchFragmentInContainer<homePage>()
+           
     fun sendMessage(view: View) {
 
     }
