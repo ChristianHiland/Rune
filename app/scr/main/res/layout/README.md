@@ -1,6 +1,6 @@
 Screens for the Runeshi app.
 
-pre-screen: Is the screen that the user sees when running the app, And also where the slect device is at.
+mainFragment: Is the screen that the user sees when running the app, And also where the slect device is at.
 
 Home-screen: Is the screen that the user sees when they get past the pre-screen.
 
