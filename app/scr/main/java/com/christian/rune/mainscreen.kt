@@ -1,4 +1,4 @@
-pakeage com.chrsitian.rune
+package com.chrsitian.rune
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -18,10 +18,14 @@ class MainActivity : AppCompatActivity() {
           setCurrentDestination(R.id.mainFragment)
     }
     
-     // Create a graphical FragmentScenario for the Leaderboard fragment
-        val homePage = launchFragmentInContainer<homePage>()
+     // Create a graphical homePage for the Home Page fragment
+        val homePage = launchFragmentInContainer<homeFragment>()
            
+    // Set the NavController property on the fragment
+        homePage.onFragment { fragment ->
+            Navigation.setViewNavController(fragment.requireView(), navController)
+        }
     fun sendMessage(view: View) {
-
+        setCurrentDestination(R.id.homeFragment)
     }
 }
