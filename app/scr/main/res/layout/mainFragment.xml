@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+//This goes in every file in the res layout.
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+     xmlns:tools="http://schemas.android.com/tools"
+     android:id="@+id/homeFragment"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     tools:context="com.chrsitian.rune.homeFragment"
+     tools:layout_editor_absoluteY="81dp">
+//The elements go here.
+
+<textView
+  android:id="@+id/home_title"
+  android:gravity="center_horizontal"
+  android:text="@string/Hello and welcome to diagnostics">
